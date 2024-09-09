@@ -1,11 +1,16 @@
+import styles from "./productItem.module.css";
+
 const ButtonComponent = () => {
-  return <button>Click</button>;
+  return <button className={styles.buttonStyle}>Click</button>;
 };
 
-const ProductItem = () => {
+const ProductItem = ({ singleProductItem, key }) => {
   return (
-    <div>
-      <p>Product 1</p>
+    <div
+      style={{ padding: "20px", border: "2px solid red", marginBottom: "10px" }}
+      key={key}
+    >
+      <p className={styles.productTitle}>{singleProductItem}</p>
       <ButtonComponent />
     </div>
   );
