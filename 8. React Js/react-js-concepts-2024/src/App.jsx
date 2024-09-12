@@ -6,6 +6,7 @@ import ProductList from "./components/products/ProductList";
 import Users from "./components/users/Users";
 import Button from "./components/context-concept/Button";
 import Text from "./components/context-concept/Text";
+import UseReducerExample from "./components/useReducer example/UseReducerExample";
 
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
 
@@ -23,8 +24,10 @@ function App() {
 
       {/* <Users/> */}
 
-      <Button/>
-      <Text/>
+      {/* <Button/>
+      <Text/> */}
+
+      <UseReducerExample/>
     </div>
   );
 }
