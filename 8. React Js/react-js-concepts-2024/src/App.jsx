@@ -7,6 +7,9 @@ import Users from "./components/users/Users";
 import Button from "./components/context-concept/Button";
 import Text from "./components/context-concept/Text";
 import UseReducerExample from "./components/useReducer example/UseReducerExample";
+import FormComponent from "./components/form/FormComponent";
+import LoginComponent from "./components/common-form/login/LoginComponent";
+import RegisterComponent from "./components/common-form/register/Registercomponent";
 
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
 
@@ -16,8 +19,8 @@ function App() {
   return (
     <div>
       <h2>React Js Concepts 2024</h2>
-      
-     {/*  <ClassBasedComponent />
+
+      {/*  <ClassBasedComponent />
       <FunctionalComponents /> */}
 
       {/* <ProductList listOfProduct={dummyProductData} name="Kasun" city="Kandy" /> */}
@@ -27,7 +30,14 @@ function App() {
       {/* <Button/>
       <Text/> */}
 
-      <UseReducerExample/>
+      {/* <UseReducerExample/> */}
+
+      {/* <FormComponent/> */}
+
+      <div style={{ display: "flex", gap: "20px" }}>
+        <LoginComponent />
+        <RegisterComponent />
+      </div>
     </div>
   );
 }
