@@ -8,8 +8,8 @@ import Button from "./components/context-concept/Button";
 import Text from "./components/context-concept/Text";
 import UseReducerExample from "./components/useReducer example/UseReducerExample";
 import FormComponent from "./components/form/FormComponent";
-import LoginComponent from "./components/common-form/login/LoginComponent";
-import RegisterComponent from "./components/common-form/register/Registercomponent";
+import LoginComponent from "./components/Dynamic form creation/login/LoginComponent";
+import RegisterComponent from "./components/Dynamic form creation/register/RegisterComponent";
 
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
 
@@ -35,8 +35,9 @@ function App() {
       {/* <FormComponent/> */}
 
       <div style={{ display: "flex", gap: "20px" }}>
-        <LoginComponent />
-        <RegisterComponent />
+        <LoginComponent/>
+        <RegisterComponent/>
+        
       </div>
     </div>
   );
